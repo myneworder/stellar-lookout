@@ -16,7 +16,7 @@ The watcher continuously requests the next ledger and sees if there are any oper
 The notifier continuously checks the database for any new notifications. If new notifications exist, the notifier will dispatch the notification using the relevant
 
 ### Subscription API
-The subscription API is a small interface to the database. It provides
+The subscription API is a small interface to the database. It provides abstractions to easily retrieve and modify subscriptions.
 
 ## Integrations
 Stellar Lookout is designed to accept plugins that integrate with different messaging system. With a simple plugin file, the lookout can gain the ability to send notifications in different systems.
