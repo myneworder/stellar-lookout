@@ -38,7 +38,6 @@ looper(config.watcherSleep, (done) => {
         opjson: JSON.stringify(op),
         opid: op.id,
         status: 'ready',
-        subscriber_internal_id: 3,
         accountsInvolved: accountsInvolvedInOp(op)
       });
     });
@@ -54,7 +53,7 @@ looper(config.watcherSleep, (done) => {
         _.each(ledgerOperations, note => {
           // Prevent duplication of op per subscriber
           filteredNotificationsObj[sub.subscriber_internal_id + '.' + sub.accountid + '.' + note.opid] = _.assign({}, note, {
-            subscriber_internal_id: 3,
+            subscriber_internal_id: sub.subscriber_internal_id,
             viewpoint: sub.accountid
           });
         })
