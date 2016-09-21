@@ -59,7 +59,7 @@ var getInfo = (account) => {
   })
   .then(subscriber => {
     info = subscriber;
-    return db.any('SELECT * from ' + config.tablePrefix + 'subscribers_accounts WHERE subscriber_internal_id=$1', [subscriber.internal_id])
+    return db.any('SELECT * from ' + config.tablePrefix + 'subscribers_accounts WHERE subscriber_internal_id=$1', [info.internal_id])
   })
   .then(accounts => {
     info.accounts = _.map(accounts, 'accountid');
