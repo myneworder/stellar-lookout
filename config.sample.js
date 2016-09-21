@@ -5,8 +5,9 @@ module.exports = {
   postgres: {
     host: 'localhost',
     port: 5432,
-    database: 'user',
-    user: 'pass',
+    database: 'db',
+    user: 'user',
+    password: 'pass',
   },
   tablePrefix: 'lookout_', // Prefix on table names. Will simply be concatenated in queries so many sure the prefix doesn't cause syntax errors
   opToMessage: require('./utils/opToMessage'),
