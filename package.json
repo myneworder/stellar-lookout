@@ -1,0 +1,25 @@
+{
+  "name": "stellar-lookout",
+  "version": "1.0.0",
+  "description": "Stellar Lookout is a modular service used to monitor accounts' transactions and dispatch relevant notifications in near real-time. It is designed in a way that it will not miss any transactions.",
+  "main": "subscriptionApi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irisli/stellar-lookout.git"
+  },
+  "author": "Iris Li",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/irisli/stellar-lookout/issues"
+  },
+  "homepage": "https://github.com/irisli/stellar-lookout#readme",
+  "dependencies": {
+    "lodash": "^4.15.0",
+    "pg-promise": "^5.3.3",
+    "stellar-base": "^0.6.0",
+    "twilio": "^2.11.0"
+  }
+}
