@@ -22,8 +22,8 @@ The subscription API is a small interface to the database. It provides abstracti
 Stellar Lookout is designed to accept plugins that integrate with different messaging system. With a simple plugin file, the lookout can gain the ability to send notifications in different systems.
 
 ## Dependencies
-Node.js Version > 6
-PostgreSQL version >= 9.5
+- Node.js Version > 6
+- PostgreSQL version >= 9.5
 
 ## Development and Roadmap
 I ([Iris Li](https://iris.li/)) am currently actively working on this project. Depending on how much support and interest this project gets, I will continue to develop this app and make improvements that the community wants.
