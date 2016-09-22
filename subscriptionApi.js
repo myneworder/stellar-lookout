@@ -54,6 +54,11 @@ var getInfo = (account) => {
   var info = {};
 
   return resolveInternalId(account)
+  .catch(error => {
+    console.log(error);
+    console.dir(account);
+    throw new Error('Unable to find account')
+  })
   .then(id => {
     return db.one('SELECT * from ' + config.tablePrefix + 'subscribers WHERE internal_id=$1', [id])
   })
@@ -65,8 +70,9 @@ var getInfo = (account) => {
     info.accounts = _.map(accounts, 'accountid');
     return info;
   })
-  .catch((error) => {
-    throw new Error('Unable to fetch account');
+  .catch(error => {
+    console.dir(error)
+    throw new Error('Unable to get info on account:');
   })
 };
 
