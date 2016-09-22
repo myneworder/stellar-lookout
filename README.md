@@ -2,7 +2,7 @@
 
 [![screenshot](https://cloud.githubusercontent.com/assets/5728307/18715311/b5e645a2-7fcd-11e6-9bd9-1e141e02786f.png)](http://stellarlookout.com)
 
-Stellar Lookout is a modular service used to monitor monitor transactions that happen on a specific account. It will then safely store the notification in the database and then dispatch the relevant notification in near real-time.
+Stellar Lookout is a modular service used to monitor transactions that happen on a specific account. It will then safely store the notification in the database and then dispatch the relevant notification in near real-time.
 
 It is designed in a robust way so that it will not miss any transactions. It walks through ledgers one at a time looking for relevant transactions.
 
