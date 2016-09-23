@@ -119,7 +119,7 @@ var setSubscriptions = (account, subscribers) => {
       });
     })
     .then((batchResults) => {
-      return batchResults[1] || [];
+      return _.map(batchResults[1], 'accountid') || [];
     })
     .catch(console.error)
 }
