@@ -1,4 +1,4 @@
-# Stellar Lookout (Live demo: [stellarlookout.com](http://stellarlookout.com))
+# Stellar Lookout
 
 [![screenshot](https://cloud.githubusercontent.com/assets/5728307/18715311/b5e645a2-7fcd-11e6-9bd9-1e141e02786f.png)](http://stellarlookout.com)
 
